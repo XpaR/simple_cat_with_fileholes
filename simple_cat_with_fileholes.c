@@ -113,9 +113,9 @@ int main(int argc, char* argv[])
         goto cleanup;
     }
 
-    free(buf);
     
 cleanup:
+    free(buf);
     printf("%s\n", ERRORS_TEXT[state]);
     return state;
 }
